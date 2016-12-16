@@ -1,0 +1,59 @@
+{
+  "channels": [{
+    "id": 10001,
+    "name": "频道1",
+    "type": "RTMP",
+    "author": {
+      "userid": "xiaoming",
+      "nick": "黄晓明"
+    },
+    "major": "english",
+    "clazz": "siji",
+    "isfee": false,
+    "fee": 0,
+    "createdTime": "2016-9-12 12:02:12",
+    "status": "直播"
+  }, {
+    "id": 10002,
+    "name": "频道2",
+    "type": "RTMP",
+    "author": {
+      "userid": "daming",
+      "nick": "黄大名"
+    },
+    "major": "english",
+    "clazz": "siji",
+    "isfee": false,
+    "fee": 0,
+    "createdTime": "2016-9-12 12:02:12",
+    "status": "空闲"
+  }, {
+    "id": 10003,
+    "name": "频道3",
+    "type": "RTMP",
+    "author": {
+      "userid": "xiaoming",
+      "nick": "黄晓明"
+    },
+    "major": "english",
+    "clazz": "siji",
+    "isfee": false,
+    "fee": 0,
+    "createdTime": "2016-09-12 12:02:12",
+    "status": "直播"
+  }, {
+    "id": 10004,
+    "name": "频道4",
+    "type": "RTMP",
+    "author": {
+      "userid": "xiaoming",
+      "nick": "黄晓明"
+    },
+    "major": "english",
+    "clazz": "siji",
+    "isfee": false,
+    "fee": 0,
+    "createdTime": "2016-9-12 12:02:12",
+    "status": "直播"
+  }]
+}
