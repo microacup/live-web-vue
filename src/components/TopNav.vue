@@ -4,10 +4,10 @@
         <div class="top-logo">
         <router-link to="/"><h1 class="logo">Live Logo</h1></router-link>
       </div>
-      <el-menu default-active="1" class="top-nav" mode="horizontal" @select="handleSelect" router=true>
-        <el-menu-item index="1" route="/">首页</el-menu-item>
-        <el-menu-item index="2" route="/all">全部</el-menu-item>
-        <el-menu-item index="3" route="/bbs">社区</el-menu-item>
+      <el-menu default-active="1" class="top-nav" mode="horizontal" @select="handleSelect" :router="true">
+        <el-menu-item index="1" :route="{ path: '/' }">首页</el-menu-item>
+        <el-menu-item index="2" :route="{ path: '/all' }">全部</el-menu-item>
+        <el-menu-item index="3" :route="{ path: '/bbs' }">社区</el-menu-item>
       </el-menu>
       <div class="top-user">
         <el-input

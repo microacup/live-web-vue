@@ -32,31 +32,31 @@ export default {
         {
           text: '中式台球中国精英赛',
           url: 'http://www.baidu.com',
-          img: 'http://i1.piimg.com/567571/f9e4feecf225f2e8.jpg',
+          img: 'http://p1.bpimg.com/567571/069b169fe722313b.jpg',
           thumbnail: 'http://staticlive.qietv.douyucdn.cn/upload/homeset/201612191030364155.jpg'
         },
         {
           text: '足球经典',
           url: 'http://www.baidu.com',
-          img: 'http://i1.piimg.com/567571/eeae5940b35da017.jpg',
+          img: 'http://p1.bpimg.com/567571/6de8ea77377dc468.jpg',
           thumbnail: 'http://staticlive.qietv.douyucdn.cn/upload/homeset/201612191018449865.jpg'
         },
         {
           text: '最真实的格斗，啊啊啊啊，打死人啦！好可怕。',
           url: 'http://www.baidu.com',
-          img: 'http://i1.piimg.com/567571/c41ef18f0462b036.jpg',
+          img: 'http://p1.bpimg.com/567571/578c5c39b2f1e41f.jpg',
           thumbnail: 'http://staticlive.qietv.douyucdn.cn/upload/homeset/201612191020152941.jpg'
         },
         {
           text: '最真实的格斗，啊啊啊啊，打死人啦！好可怕。',
           url: 'http://www.baidu.com',
-          img: 'http://i1.piimg.com/567571/c41ef18f0462b036.jpg',
+          img: 'http://p1.bpimg.com/567571/5fb73e6f4aa95ee3.jpg',
           thumbnail: 'http://staticlive.qietv.douyucdn.cn/upload/homeset/201612191020152941.jpg'
         },
         {
           text: '最真实的格斗，啊啊啊啊，打死人啦！好可怕。',
           url: 'http://www.baidu.com',
-          img: 'http://i1.piimg.com/567571/c41ef18f0462b036.jpg',
+          img: 'http://p1.bpimg.com/567571/1488a6ee2bbbafd6.jpg',
           thumbnail: 'http://staticlive.qietv.douyucdn.cn/upload/homeset/201612191020152941.jpg'
         }
       ]
