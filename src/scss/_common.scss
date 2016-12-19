@@ -1,12 +1,35 @@
-h1, .h1 { font-size: $font-size-h1; }
-h2, .h2 { font-size: $font-size-h2; }
-h3, .h3 { font-size: $font-size-h3; }
-h4, .h4 { font-size: $font-size-h4; }
-h5, .h5 { font-size: $font-size-h5; }
-h6, .h6 { font-size: $font-size-h6; }
+h1,
+.h1 {
+  font-size: $font-size-h1;
+}
+
+h2,
+.h2 {
+  font-size: $font-size-h2;
+}
+
+h3,
+.h3 {
+  font-size: $font-size-h3;
+}
+
+h4,
+.h4 {
+  font-size: $font-size-h4;
+}
+
+h5,
+.h5 {
+  font-size: $font-size-h5;
+}
+
+h6,
+.h6 {
+  font-size: $font-size-h6;
+}
 
 .logo {
-  margin:0;
+  margin: 0;
 }
 
 .add-back {
@@ -15,8 +38,8 @@ h6, .h6 { font-size: $font-size-h6; }
   border-bottom: 1px solid $border-color-primary;
   width: 100%;
   font-size: 14px;
-  padding-top: 5px; 
-  & > * {
+  padding-top: 5px;
+  &>* {
     cursor: pointer !important;
   }
 }
@@ -28,4 +51,20 @@ form {
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    word-break: keep-all;
 }

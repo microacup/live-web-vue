@@ -3,28 +3,37 @@
     <top-nav></top-nav>
 
     <transition name="fade" mode="out-in">
-      <section class="app-content">
-        <router-view></router-view>
-      </section>
+      <router-view class="app-content"></router-view>
     </transition>
+
+    <main-footer></main-footer>
   </div>
 
 </template>
 
 <script>
   import TopNav from './components/TopNav';
+  import MainFooter from './components/MainFooter';
 
   export default {
     name: 'app',
     components: {
-      TopNav
+      TopNav,
+      MainFooter
     }
   };
 </script>
 <style lang="scss">
   #app {
     .app-content {
-      min-height: calc(100vh - 62px);
+      min-height: calc(100vh - 113px);
+    }
+    .fade-enter-active, .fade-leave-active {
+      transition: all .2s ease;
+    }
+
+    .fade-enter, .fade-leave-active {
+      opacity: 0;
     }
   }
 </style>
