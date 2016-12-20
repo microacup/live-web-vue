@@ -1,25 +1,52 @@
 <template>
   <el-card class="live-card" :body-style="{ padding: '0px' }">
-    <div class="live-cover">
-      <img class="image" src="http://element.eleme.io/static/hamburger.50e4091.png">
-    </div>
-    <div class="card-footer">
-      <img class="po-avatar" src="http://uc.qietv.douyucdn.cn/avatar.php?uid=6048607&size=small" alt="">
-      <div class="live-info">
-        <div class="ellipsis live-title">可爱又迷人的反派角色就是我</div>
-        <span class="po-nick">zebra陈</span>
-        <span class="online">1222</span>
+    <a href="javascript:;" class="card-target">
+      <div class="live-cover">
+        <div class="control"></div>
+        <img class="image" src="http://element.eleme.io/static/hamburger.50e4091.png">
       </div>
-    </div>
+      <div class="card-footer">
+        <img class="po-avatar" src="http://uc.qietv.douyucdn.cn/avatar.php?uid=6048607&size=small" alt="">
+        <div class="live-info">
+          <div class="ellipsis live-title">可爱又迷人的反派角色就是我又闪人不眨眼</div>
+          <span class="po-nick">zebra陈</span>
+          <span class="online">1222</span>
+        </div>
+      </div>
+    </a>
   </el-card>
 </template>
 <style lang="scss">
   .live-card {
+    a:hover {
+      .control {
+        top: 50%;
+        opacity: 1;
+        filter: alpha(opacity=100);
+        z-index: 1;
+      }
+    }
     .live-cover {
+      position: relative;
       &,
       img {
         width: 100%;
         height: 158px;
+      }
+
+      .control {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: url(../assets/play-bj.png) no-repeat;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        margin-top: -25px;
+        margin-left: -25px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        transition: all .3s ease;
       }
     }
     .card-footer {
