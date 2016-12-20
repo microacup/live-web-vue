@@ -1,7 +1,7 @@
 <template>
   <div class="carousel">
     <div class="carousel-model">
-      <ul class="carousel-content" :style="{'transform': 'translate3d(' + -(index * 995) + 'px, 0, 0)'}">
+      <ul class="carousel-content" :style="{'transform': 'translate3d(' + -(index * 995) + 'px, 0, 0)','width': '' + (5 * 995) + 'px'}">
         <li v-for="carousel in carousels" @mouseover="end" @mouseout="start">
           <a :href="carousel.url" target="_blank"><img :src="carousel.img" alt=""></a>
         </li>
