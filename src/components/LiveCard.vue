@@ -3,6 +3,7 @@
     <a href="javascript:;" class="card-target">
       <div class="live-cover">
         <div class="control"></div>
+        <div class="tag tag-live">Live</div>
         <img class="image" src="http://element.eleme.io/static/hamburger.50e4091.png">
       </div>
       <div class="card-footer">
@@ -32,6 +33,21 @@
       img {
         width: 100%;
         height: 158px;
+      }
+
+      .tag {
+        position: absolute;
+        height: 20px;
+        font-size: 12px;
+        color: #fff;
+        right: 5px;
+        top: 5px;
+        padding: 0 5px;
+        border-radius: 2px;
+
+        &.tag-live {
+          background-color: #e70c0c;
+        }
       }
 
       .control {
