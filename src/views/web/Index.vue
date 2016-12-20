@@ -20,8 +20,8 @@
     components: {
       Carousel,
       Hots,
-      LivesRow
-    }
+      LivesRow,
+    },
   };
 </script>
 <style lang="scss">

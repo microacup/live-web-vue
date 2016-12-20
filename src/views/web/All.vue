@@ -1,6 +1,8 @@
 <template>
-  <el-row type="flex" class="all">
+  <div class="all">
     <left-nav></left-nav>
+    <div class="right-content">
+    </div>
   </el-row>
 </template>
 
@@ -10,17 +12,21 @@
   export default {
     name: 'All',
     components: {
-      LeftNav
-    }
+      LeftNav,
+    },
   };
 </script>
 
 <style lang="scss">
   .all {
-    min-height: calc(100vh - 62px);
-    
+    display: flex;
+
     .left-nav {
         flex: 0 0 200px;
+    }
+
+    .right-content {
+      flex: 1;
     }
   }
 </style>

@@ -33,5 +33,5 @@ Vue.use(VideoPlayer);
 // making them available everywhere as `this.$router` and `this.$store`.
 new Vue(Vue.util.extend({
   router,
-  store
+  store,
 }, App)).$mount('#app');

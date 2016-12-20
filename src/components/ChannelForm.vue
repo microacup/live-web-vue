@@ -56,7 +56,7 @@ export default {
   name: 'ChannelForm',
   props: [
     'channel',
-    'type'
+    'type',
   ],
   data() {
     return {

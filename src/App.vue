@@ -19,14 +19,16 @@
     name: 'app',
     components: {
       TopNav,
-      MainFooter
-    }
+      MainFooter,
+    },
   };
 </script>
 <style lang="scss">
   #app {
     .app-content {
       min-height: calc(100vh - 113px);
+      background-color: #f5f5f5;
+      width: 100%;
     }
     .fade-enter-active, .fade-leave-active {
       transition: all .2s ease;

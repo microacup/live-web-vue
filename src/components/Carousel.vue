@@ -3,7 +3,7 @@
     <div class="carousel-model">
       <ul class="carousel-content" :style="{'transform': 'translate3d(' + -(index * 995) + 'px, 0, 0)','width': '' + (5 * 995) + 'px'}">
         <li v-for="carousel in carousels" @mouseover="end" @mouseout="start">
-          <a :href="carousel.url" target="_blank"><img :src="carousel.img" alt=""></a>
+          <a :href="carousel.url" target="_blank"><img class="carousel-player" :src="carousel.img" alt=""></a>
         </li>
       </ul>
     </div>
@@ -33,33 +33,33 @@ export default {
           text: '中式台球中国精英赛',
           url: 'http://www.baidu.com',
           img: 'http://p1.bpimg.com/567571/069b169fe722313b.jpg',
-          thumbnail: 'http://staticlive.qietv.douyucdn.cn/upload/homeset/201612191030364155.jpg'
+          thumbnail: 'http://staticlive.qietv.douyucdn.cn/upload/homeset/201612191030364155.jpg',
         },
         {
           text: '足球经典',
           url: 'http://www.baidu.com',
           img: 'http://p1.bpimg.com/567571/6de8ea77377dc468.jpg',
-          thumbnail: 'http://staticlive.qietv.douyucdn.cn/upload/homeset/201612191018449865.jpg'
+          thumbnail: 'http://staticlive.qietv.douyucdn.cn/upload/homeset/201612191018449865.jpg',
         },
         {
           text: '最真实的格斗，啊啊啊啊，打死人啦！好可怕。',
           url: 'http://www.baidu.com',
           img: 'http://p1.bpimg.com/567571/578c5c39b2f1e41f.jpg',
-          thumbnail: 'http://staticlive.qietv.douyucdn.cn/upload/homeset/201612191020152941.jpg'
+          thumbnail: 'http://staticlive.qietv.douyucdn.cn/upload/homeset/201612191020152941.jpg',
         },
         {
           text: '最真实的格斗，啊啊啊啊，打死人啦！好可怕。',
           url: 'http://www.baidu.com',
           img: 'http://p1.bpimg.com/567571/5fb73e6f4aa95ee3.jpg',
-          thumbnail: 'http://staticlive.qietv.douyucdn.cn/upload/homeset/201612191020152941.jpg'
+          thumbnail: 'http://staticlive.qietv.douyucdn.cn/upload/homeset/201612191020152941.jpg',
         },
         {
           text: '最真实的格斗，啊啊啊啊，打死人啦！好可怕。',
           url: 'http://www.baidu.com',
           img: 'http://p1.bpimg.com/567571/1488a6ee2bbbafd6.jpg',
-          thumbnail: 'http://staticlive.qietv.douyucdn.cn/upload/homeset/201612191020152941.jpg'
-        }
-      ]
+          thumbnail: 'http://staticlive.qietv.douyucdn.cn/upload/homeset/201612191020152941.jpg',
+        },
+      ],
     };
   },
   mounted() {
@@ -83,8 +83,8 @@ export default {
     },
     destory() {
       this.end();
-    }
-  }
+    },
+  },
 };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -125,7 +125,7 @@ export default {
           float: left;
         }
         a,
-        img {
+        .carousel-player {
           @extend %carouselsize;
           position: relative;
           display: inline-block;

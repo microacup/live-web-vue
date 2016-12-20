@@ -10,5 +10,5 @@ export default new Router({
     { path: '/', component: resolve => require(['../views/web/Index'], resolve) },
     { path: '/all', component: resolve => require(['../views/web/All'], resolve) },
     { path: '/live', component: resolve => require(['../views/web/Live'], resolve) },
-  ]
+  ],
 });

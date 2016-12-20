@@ -33,7 +33,6 @@ module.exports = {
     "no-param-reassign": 0,
     "linebreak-style": 0,
     "eol-last": 0,
-    "comma-dangle": 0,
     'no-console': 'off',
     "import/no-dynamic-require": 0,
     'import/no-extraneous-dependencies': 0,  

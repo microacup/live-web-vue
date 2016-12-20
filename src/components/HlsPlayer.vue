@@ -14,8 +14,8 @@
             withCredentials: false,
           },
           live: true,
-          autoplay: false
-        }
+          autoplay: false,
+        },
       };
     },
   };

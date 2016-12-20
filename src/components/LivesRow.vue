@@ -17,7 +17,8 @@
 </template>
 <style lang="scss">
   .lives-row {
-    margin: 20px auto;
+    margin: 0px auto;
+    padding-bottom: 20px;
     .row-top {
       height: 56px;
       margin-bottom: 2px;
@@ -45,10 +46,10 @@
   export default {
     name: 'LivesRow',
     props: [
-      'title'
+      'title',
     ],
     components: {
-      LiveCard
+      LiveCard,
     },
   };
 </script>
