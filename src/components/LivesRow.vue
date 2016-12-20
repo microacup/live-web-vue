@@ -1,10 +1,10 @@
 <template>
   <div class="lives-row container">
-    <div class="row-top">
+    <div v-if="title" class="row-top">
       <div class="pull-left">
         <h2>{{title}}</h2>
       </div>
-      <div class="pull-right">
+      <div v-show="more" class="pull-right">
         <router-link to="/">更多</router-link>
       </div>
     </div>
@@ -15,6 +15,23 @@
     </el-row>
   </div>
 </template>
+<script>
+  import LiveCard from './LiveCard';
+
+  export default {
+    name: 'LivesRow',
+    props: {
+      title: String,
+      more: {
+        type: Boolean,
+        default: true,
+      },
+    },
+    components: {
+      LiveCard,
+    },
+  };
+</script>
 <style lang="scss">
   .lives-row {
     margin: 0px auto;
@@ -40,16 +57,3 @@
   }
 
 </style>
-<script>
-  import LiveCard from './LiveCard';
-
-  export default {
-    name: 'LivesRow',
-    props: [
-      'title',
-    ],
-    components: {
-      LiveCard,
-    },
-  };
-</script>

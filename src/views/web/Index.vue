@@ -6,8 +6,8 @@
       </div>
     </div>
 
-    <lives-row title="正在直播"></lives-row>
-    <lives-row title="精彩推荐"></lives-row>
+    <lives-row title="正在直播" more></lives-row>
+    <lives-row title="精彩推荐" more></lives-row>
   </div>
 </template>
 <script>
