@@ -2,7 +2,7 @@
   <div class="all">
     <left-nav></left-nav>
     <div class="right-content">
-      <lives-row title="在线直播" :more=false></lives-row>
+      <lives-row title="在线直播" :more=false :count=12></lives-row>
     </div>
   </el-row>
 </template>

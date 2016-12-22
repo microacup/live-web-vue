@@ -9,6 +9,6 @@ export default new Router({
   routes: [
     { path: '/', component: resolve => require(['../views/web/Index'], resolve) },
     { path: '/all', component: resolve => require(['../views/web/All'], resolve) },
-    { path: '/live', component: resolve => require(['../views/web/Live'], resolve) },
+    { path: '/live/:id', component: resolve => require(['../views/web/Live'], resolve) },
   ],
 });

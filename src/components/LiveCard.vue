@@ -1,24 +1,45 @@
 <template>
   <el-card class="live-card" :body-style="{ padding: '0px' }">
-    <a href="javascript:;" class="card-target">
+    <a :href="'/live/' + live.number" class="card-target">
       <div class="live-cover">
         <div class="control"></div>
         <div class="tag tag-live">Live</div>
-        <img class="image" src="http://element.eleme.io/static/hamburger.50e4091.png">
+        <img class="image" :src="live.cover">
       </div>
       <div class="card-footer">
-        <img class="po-avatar" src="http://uc.qietv.douyucdn.cn/avatar.php?uid=6048607&size=small" alt="">
+        <img class="po-avatar" :src="live.po.avatar" alt="">
         <div class="live-info">
-          <div class="ellipsis live-title">可爱又迷人的反派角色就是我又闪人不眨眼</div>
-          <span class="po-nick">zebra陈</span>
-          <span class="online">1222</span>
+          <div class="ellipsis live-title">{{live.title}}</div>
+          <span class="po-nick">{{live.po.nick}}</span>
+          <span class="online">{{live.online}}</span>
         </div>
       </div>
     </a>
   </el-card>
 </template>
+<script>
+  export default {
+    name: 'LiveCard',
+    data() {
+      return {
+        live: {
+          number: 1001,
+          cover: 'http://element.eleme.io/static/hamburger.50e4091.png',
+          title: '可爱又迷人的反派角色就是我杀人不眨眼',
+          po: {
+            id: 1001,
+            avatar: 'http://uc.qietv.douyucdn.cn/avatar.php?uid=6048607&size=small',
+            nick: 'zebra陈',
+          },
+          online: 1024,
+        },
+      };
+    },
+  };
+</script>
 <style lang="scss">
   .live-card {
+    margin-bottom: 20px;
     a:hover {
       .control {
         top: 50%;
@@ -32,7 +53,7 @@
       &,
       img {
         width: 100%;
-        height: 158px;
+        height: 159px;
       }
 
       .tag {

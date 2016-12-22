@@ -9,7 +9,7 @@
       </div>
     </div>
     <el-row class="row-body">
-      <el-col class="live-col" :span="6" v-for="(o, index) in 4">
+      <el-col class="live-col" :span="6" v-for="(o, index) in count">
         <live-card></live-card>
       </el-col>
     </el-row>
@@ -26,6 +26,10 @@
         type: Boolean,
         default: true,
       },
+      count: {
+        type: Number,
+        default: 4,
+      },
     },
     components: {
       LiveCard,
@@ -35,7 +39,6 @@
 <style lang="scss">
   .lives-row {
     margin: 0px auto;
-    padding-bottom: 20px;
     .row-top {
       height: 56px;
       margin-bottom: 2px;

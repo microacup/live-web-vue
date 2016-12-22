@@ -226,30 +226,13 @@
               letter-spacing: normal;
               text-align: center;
               float: left;
+              padding-top: 10px;
               a {
                 display: block;
                 font-size: 12px;
                 color: #8d93a1;
                 text-align: center;
                 line-height: 1em;
-
-                .liveicon {
-                  margin-top: 14px;
-                  display: inline-block;
-                  width: 22px;
-                  height: 22px;
-                  background: url(../assets/ued-icon.png) no-repeat;
-
-                  &.liveicon-profile {
-                    background: url(../assets/u_nav_icon.png) no-repeat;
-                  }
-                  &.liveicon-follow {
-                    background-position: -105px -66px;
-                  }
-                   &.liveicon-setting {
-                    background-position: -291px -634px;
-                  }
-                }
                 span {
                   display: block;
                   line-height: 14px;
