@@ -17,8 +17,8 @@
         </div>
       </div>
       <div class="room-body">
-        <rtmp-player></rtmp-player>
-        <div class="room-actions">礼物区</div>
+        <div class="live-player"><ne-player></ne-player></div>
+        <!--<div class="room-actions">礼物区</div>-->
         <div class="room-events">
           <h2>官方活动</h2>
           <el-row class="events-body">
@@ -50,12 +50,12 @@
 </template>
 
 <script>
-  import RtmpPlayer from '../../components/RtmpPlayer';
+  import NePlayer from '../../components/NePlayer';
 
   export default {
     name: 'Live',
     components: {
-      RtmpPlayer,
+      NePlayer,
     },
   };
 </script>
@@ -105,8 +105,16 @@
         }
       }
 
-      .video-player {
+      .live-player {
+        width: calc(100vw - 400px);
+        /*16:9*/
+        height: calc(56.25vw - 225px); 
 
+        .video-js {
+          width: 100%;
+          height: 100%;
+
+        }
       }
 
       .room-events {

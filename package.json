@@ -23,7 +23,6 @@
     "timeago.js": "^2.0.4",
     "vue": "^2.1.4",
     "vue-router": "^2.1.1",
-    "vue-video-player": "^2.4.0",
     "vuex": "^2.0.0",
     "vuex-router-sync": "^3.0.0"
   },

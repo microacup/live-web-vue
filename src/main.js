@@ -3,7 +3,6 @@
 import Vue from 'vue';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-default/index.css';
-import VideoPlayer from 'vue-video-player';
 import FastClick from 'fastclick';
 import { sync } from 'vuex-router-sync';
 import 'es6-promise/auto';
@@ -21,12 +20,6 @@ sync(store, router);
 Vue.use(ElementUI);
 
 FastClick.attach(document.body);
-
-VideoPlayer.config({
-  switcher: true,
-  hls: true,
-});
-Vue.use(VideoPlayer);
 
 // create the app instance.
 // here we inject the router and store to all child components,
