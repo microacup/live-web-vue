@@ -143,7 +143,7 @@
       .el-tabs__header {
         display: flex;
       }
-      .el-.el-tabs__item {
+      .el-tabs__item {
         flex: 1;
       }
     }
