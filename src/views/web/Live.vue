@@ -40,10 +40,13 @@
     </div>
     <div class="room-chat">
       <el-tabs type="border-card">
-        <el-tab-pane label="贡献周榜">贡献周榜</el-tab-pane>
+        <el-tab-pane label="贡献周榜">贡献周榜
+          <chat-room></chat-room>
+        </el-tab-pane>
         <el-tab-pane label="贡献总榜">贡献总榜</el-tab-pane>
         <el-tab-pane label="直播公告">直播公告</el-tab-pane>
       </el-tabs>
+      
     </div>
 
   </div>
@@ -51,11 +54,13 @@
 
 <script>
   import NePlayer from '../../components/NePlayer';
+  import ChatRoom from '../../components/ChatRoom';
 
   export default {
     name: 'Live',
     components: {
       NePlayer,
+      ChatRoom,
     },
   };
 </script>

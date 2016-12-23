@@ -77,10 +77,6 @@ export default {
         this.index = this.index >= 2 ? 0 : this.index += 1;
       }, 3000);
     },
-    mounted() {
-      // 启动定时器
-      this.start();
-    },
     destory() {
       this.end();
     },
