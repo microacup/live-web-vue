@@ -74,6 +74,8 @@
     background-color: #fff;
     height: 61px;
     line-height: 61px;
+    width: 100%;
+    
 
     .container>* {
       float: left;

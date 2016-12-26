@@ -38,15 +38,14 @@
         </div>
       </div>
     </div>
-    <div class="room-chat">
+    <div class="live-chat">
       <el-tabs type="border-card">
         <el-tab-pane label="贡献周榜">贡献周榜
-          <chat-room></chat-room>
         </el-tab-pane>
         <el-tab-pane label="贡献总榜">贡献总榜</el-tab-pane>
         <el-tab-pane label="直播公告">直播公告</el-tab-pane>
       </el-tabs>
-      
+      <chat-room></chat-room>
     </div>
 
   </div>
@@ -58,6 +57,11 @@
 
   export default {
     name: 'Live',
+    data() {
+      return {
+        player: true,
+      };
+    },
     components: {
       NePlayer,
       ChatRoom,
@@ -136,20 +140,25 @@
         }
       }
     }
-    .room-chat {
+    .live-chat {
       background: #fff;
       flex: 0 0 320px;
+      height: calc(100vh - 76px);
 
       .el-tabs {
         width: 100%;
-        height: 100%;
+        display: block;
+        
+        .el-tabs__header {
+          display: flex;
+        }
+        .el-tabs__item {
+          flex: 1;
+        }
       }
 
-      .el-tabs__header {
-        display: flex;
-      }
-      .el-tabs__item {
-        flex: 1;
+      .chat-room {
+        height: calc(100vh - 175px);
       }
     }
   }

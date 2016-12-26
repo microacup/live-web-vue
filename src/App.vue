@@ -26,6 +26,7 @@
 <style lang="scss">
   #app {
     .app-content {
+      height: auto;
       min-height: calc(100vh - 113px);
       background-color: #f5f5f5;
       width: 100%;

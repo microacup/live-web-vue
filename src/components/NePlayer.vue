@@ -5,7 +5,7 @@
   webkit-playsinline 
   controls 
   poster="http://p1.bpimg.com/567571/4ef142c1c82c4133.jpg" 
-  preload="metadata" 
+  preload="none" 
   data-setup="{}">
   <source src="http://nos.netease.com/vod163/demo.mp4" type="video/mp4">
 </video>
