@@ -1,11 +1,11 @@
 <template>
   <div class="chat-room">
     <ul class="message-list">
-      <li v-for="msg in messages">{{msg}}</li>
+      <li  v-for="msg in messages">{{msg}}</li>
     </ul>
     <div class="input-group">
-      <textarea id="chat-message" type="textarea" :minlength="1" @keyup.alt.enter="newMessage" :maxlength="80" :rows="2" :autosize="false"
-        placeholder="这里输入聊天内容(Alt+Enter发送)" v-model="message">
+      <textarea id="chat-message" type="textarea" :minlength="1" @keyup.enter="newMessage" :maxlength="80" :rows="2" :autosize="false"
+        placeholder="这里输入聊天内容(Enter发送)" v-model="message">
       </textarea>
       <el-button type="primary" slot="append" id="submit-chat" @click="newMessage">发送</el-button>
     </div>
@@ -31,23 +31,32 @@
         console.log(`connect ${this.roomId}`);
 
         socket.on('updateUsersList', (userId) => {
-          this.messages.push(`${userId} 加入了房间`);
+          this.refreshMessage(`${userId} 加入了房间`);
         });
         socket.on('addMessage', (message) => {
           console.log(`new message ${message}`);
-          this.messages.push(message);
+          this.refreshMessage(message);
         });
         socket.on('userLeave', (userId) => {
           console.log(`${userId} leaved`);
-          this.messages.push(`${userId} 离开了房间`);
+          this.refreshMessage(`${userId} 离开了房间`);
         });
       });
     },
     methods: {
       newMessage() {
-        this.messages.push(this.message);
         socket.emit('newMessage', this.roomId, this.message);
+        this.refreshMessage(this.message);
         this.message = '';
+      },
+      refreshMessage(message) {
+        this.messages.push(message);
+        setTimeout(() => {
+          // 滚动
+          const msglist = document.getElementsByClassName('message-list');
+          const lastli = msglist[msglist.length - 1];
+          lastli.scrollTop = lastli.scrollHeight;
+        }, 200); // 延迟xxms,因为ui更新有延迟
       },
     },
   };

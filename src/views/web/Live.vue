@@ -76,7 +76,8 @@
     .room-main {
       flex: 1;
       margin: 0 20px 0 0;
-    
+      min-width: 600px;
+      
       .room-header {
         height: 60px;
         position: relative;
@@ -118,6 +119,8 @@
         width: calc(100vw - 400px);
         /*16:9*/
         height: calc(56.25vw - 225px); 
+        min-width: 600px;
+        min-height: 337px;
 
         .video-js {
           width: 100%;
