@@ -77,7 +77,7 @@
       flex: 1;
       margin: 0 20px 0 0;
       min-width: 600px;
-      
+
       .room-header {
         height: 60px;
         position: relative;
@@ -161,7 +161,7 @@
       }
 
       .chat-room {
-        height: calc(100vh - 175px);
+        height: calc(100% - 95px);
       }
     }
   }
