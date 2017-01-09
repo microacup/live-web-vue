@@ -100,6 +100,7 @@
       .top-search-input {
         margin: 12px 12px;
         float: left;
+        width: 240px;
       }
 
       &>ul {
