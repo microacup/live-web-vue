@@ -26,7 +26,7 @@
 </script>
 <style lang="scss">
   .banner {
-    background: url(http://staticlive.qietv.douyucdn.cn/upload/c1db7bfdac77464e2f0502423e9e66c2.jpg) center top no-repeat;
+    background: url(http://staticlive.qietv.douyucdn.cn/upload/7643acd87c23669c2f12d2ec9fbfbc1b.jpg) center top no-repeat;
     padding-top: 20px;
     padding-bottom: 20px;
   }

@@ -4,7 +4,7 @@
     <div class="pull-right">
       <b>Version</b> 1.0.0
     </div>
-    Copyright &copy; 2016 <a href="#">live</a>.
+    Copyright &copy; 2016 <router-link to="http://meiqiu.me">meiqiu.me</router-link>.
     All rights reserved.
   </div>
   <!-- /.container -->

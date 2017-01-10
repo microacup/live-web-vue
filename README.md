@@ -21,9 +21,6 @@
 ## Build Setup
 
 ``` bash
-# mock data
-json-server db.json --routes routes.json
-
 # install dependencies
 npm install
 
@@ -49,8 +46,12 @@ npm test
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 
+## github
+
+[live-web](https://github.com/microacup/live-web-vue)
 
 ## 作者
 
-[microacup.meiqiu.me](http://microacup.meiqiu.me)	xiangmain@gmail.com
+- [meiqiu.me](http://meiqiu.me) 
+- xiangmain@gmail.com
 
